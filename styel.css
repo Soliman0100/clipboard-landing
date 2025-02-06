@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* font-family: "Bai Jamjuree", serif; */
+
+:root {
+  /* ### Primary */
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  /* ### Neutral */
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --section-padd: 5em;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bai Jamjuree", serif;
+  margin: 0;
+  position: relative;
+}
+picture {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+section {
+  margin: 0 1em;
+}
+/* Start header */
+.header {
+  position: relative;
+  padding-top: var(--section-padd);
+  padding-bottom: var(--section-padd);
+}
+.main-logo {
+  display: block;
+  margin: 0 auto;
+}
+.header h1 {
+  text-align: center;
+  margin: 0.5em 0;
+  font-size: 2rem;
+  color: var(--Dark-Grayish-Blue);
+}
+.header p {
+  max-width: 430px;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--Grayish-Blue);
+}
+.downloud {
+  text-align: center;
+  margin: 2em 0;
+}
+button {
+  border: 0;
+  padding: 20px 35px;
+  margin: 1em 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button-cyan {
+  background-color: var(--Strong-Cyan);
+  box-shadow: 0px 4px 5px 0px hsl(171deg 66% 44% / 37%);
+}
+.button-blue {
+  background-color: var(--Light-Blue);
+  box-shadow: 0px 4px 5px 0px hsl(235.89deg 90.12% 68.24% / 85%);
+}
+.button-cyan:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 10px 5px 0px hsla(171, 66%, 44%, 0.574);
+}
+.button-blue:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 10px 5px 0px hsla(236, 90%, 68%, 0.929);
+}
+
+/* End header */
+/* Start landing */
+.main-heading {
+  text-align: center;
+  padding-bottom: 1em;
+}
+.main-heading h2 {
+  color: var(--Dark-Grayish-Blue);
+}
+.main-heading p {
+  max-width: 430px;
+  margin: 1em auto;
+  line-height: 1.8;
+  color: var(--Grayish-Blue);
+}
+.landing .landing-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20em;
+}
+@media (max-width: 1230px) {
+  .landing .landing-section {
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .landing .landing-section {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+.landing .landing-section .landing-img {
+  width: 70%;
+  transform: translateX(-20px);
+}
+.landing .landing-section .landing-img img {
+  width: 100%;
+}
+.landing .landing-section .landing-title {
+  width: 20%;
+}
+@media (max-width: 767px) {
+  .landing .landing-section .landing-title {
+    text-align: center;
+    width: 80%;
+  }
+}
+.landing-title .box {
+  margin: 2em 0;
+}
+.landing-title .box h3 {
+  margin: 1em 0;
+  color: var(--Dark-Grayish-Blue);
+}
+.landing-title .box p {
+  color: var(--Grayish-Blue);
+}
+/* End landing */
+/* Statrt access */
+.access {
+  padding-bottom: 1em;
+}
+.access .main-heading {
+  padding-top: 100px;
+}
+.access .acces-img {
+  width: 50%;
+  margin: auto;
+}
+.access .acces-img img {
+  width: 100%;
+}
+/* End access */
+/* Start supercharge */
+.super-boxs {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 1em;
+}
+.super-boxs .box {
+  margin: 2em;
+}
+.super-boxs .box img {
+  margin-bottom: 1em;
+}
+.super-boxs .box h3 {
+  margin: 1em 0;
+  color: var(--Dark-Grayish-Blue);
+}
+.super-boxs .box p {
+  color: var(--Grayish-Blue);
+  line-height: 1.8;
+}
+@media (max-width: 767px) {
+  .super-boxs {
+    flex-direction: column;
+  }
+  .super-boxs .box {
+    margin: 1em;
+  }
+}
+/* End supercharge */
+/* Start images-section */
+.images-section {
+  margin: 5em auto;
+  text-align: center;
+}
+.images-section img {
+  margin: 4em;
+}
+/* Start images-section */
+/* Start cliboard */
+.clipoard {
+  margin: 8em 0;
+}
+/* End cliboard */
+/* Start footer */
+footer {
+  padding: 2em 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+}
+footer .boxes-left {
+  display: flex;
+  align-items: center;
+}
+footer .boxes-left > img {
+  width: 50px;
+}
+footer .boxes-left .box {
+  margin: 2em;
+}
+footer .boxes-right img {
+  margin: 0.5em;
+}
+@media (max-width: 767px) {
+  footer,
+  footer .boxes-left {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* End footer */
